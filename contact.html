@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vishvnath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Vishvnath</a>
+
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section">
+        <h1>Contact Me</h1>
+
+        <div class="contact-wrapper">
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="handleFormSubmit(event)">
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write your message here..."></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+                <!-- Success message (shown after form is submitted) -->
+                <div class="success-msg" id="successMsg">
+                    &#10003; Thank you! Your message has been sent.
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+
+                <p>
+                    &#128231; Email:<br>
+                    <a href="mailto:abhi@gmail.com">abhi@gmail.com</a>
+                </p>
+
+                <p>
+                    &#128247; Instagram:<br>
+                    <a href="https://www.instagram.com/" target="_blank">instagram.com/vishvnath</a>
+                </p>
+
+                <p>
+                    &#128188; LinkedIn:<br>
+                    <a href="https://www.linkedin.com/login" target="_blank">linkedin.com/in/vishvnath</a>
+                </p>
+
+                <p style="margin-top: 20px; color: #777; font-size: 13px;">
+                    I usually reply within 1-2 days. Feel free to message me anytime!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Vishvnath | Muit University</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

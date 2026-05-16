@@ -1,0 +1,564 @@
+/* ================================
+   Student Portfolio - Vishvnath
+   Muit University
+   ================================ */
+
+/* --- Basic Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* --- Navbar Styles --- */
+.navbar {
+    background-color: #1a73e8;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* --- Footer Styles --- */
+.footer {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ================================
+   HOME PAGE
+   ================================ */
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.home-text h1 {
+    font-size: 38px;
+    color: #1a73e8;
+    margin-bottom: 8px;
+}
+
+.home-text h2 {
+    font-size: 20px;
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.home-text p {
+    font-size: 16px;
+    color: #666;
+    max-width: 420px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Profile image placeholder (since no real image) */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #1a73e8;
+    object-fit: cover;
+    background-color: #cde4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #1a73e8;
+    flex-shrink: 0;
+}
+
+/* Blue Button */
+.btn-blue {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-blue:hover {
+    background-color: #1558b0;
+}
+
+/* ================================
+   ABOUT PAGE
+   ================================ */
+
+.about-section {
+    padding: 50px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-section h1 {
+    font-size: 30px;
+    color: #1a73e8;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 8px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    border: 3px solid #1a73e8;
+    object-fit: cover;
+    background-color: #cde4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #1a73e8;
+    flex-shrink: 0;
+}
+
+.about-text p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.about-text h3 {
+    font-size: 18px;
+    color: #1a73e8;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.about-text ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ================================
+   SKILLS PAGE
+   ================================ */
+
+.skills-section {
+    padding: 50px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills-section h1 {
+    font-size: 30px;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 8px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Each skill card */
+.skill-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.skill-card:hover {
+    border-color: #1a73e8;
+    box-shadow: 0 4px 10px rgba(26,115,232,0.15);
+}
+
+.skill-card .skill-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.skill-card .skill-percent {
+    font-size: 14px;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* Simple static progress bar */
+.progress-bar-bg {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 8px;
+    background-color: #1a73e8;
+    border-radius: 4px;
+}
+
+/* ================================
+   PROJECTS PAGE
+   ================================ */
+
+.projects-section {
+    padding: 50px 40px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.projects-section h1 {
+    font-size: 30px;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 8px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* Each project card */
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    background-color: #cde4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #1a73e8;
+}
+
+.project-info {
+    padding: 16px;
+}
+
+.project-info h3 {
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.project-btns {
+    display: flex;
+    gap: 10px;
+}
+
+/* Demo button */
+.btn-demo {
+    background-color: #1a73e8;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-demo:hover {
+    background-color: #1558b0;
+}
+
+/* GitHub button */
+.btn-github {
+    background-color: white;
+    color: #333;
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-github:hover {
+    background-color: #f0f0f0;
+}
+
+/* ================================
+   CONTACT PAGE
+   ================================ */
+
+.contact-section {
+    padding: 50px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h1 {
+    font-size: 30px;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 8px;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact form */
+.contact-form {
+    flex: 1;
+    min-width: 260px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+    margin-top: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1a73e8;
+}
+
+.contact-form textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 16px;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1558b0;
+}
+
+/* Contact info box */
+.contact-info {
+    min-width: 200px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    color: #1a73e8;
+    margin-bottom: 14px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Success message (hidden by default) */
+.success-msg {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 14px;
+    font-size: 14px;
+    border: 1px solid #c3e6cb;
+}
+
+/* ================================
+   RESPONSIVE - Mobile
+   ================================ */
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+
+    /* Mobile navbar */
+    .navbar {
+        flex-wrap: wrap;
+        padding: 14px 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Home page */
+    .home-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .home-text h1 {
+        font-size: 28px;
+    }
+
+    /* About page */
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    /* Skills page */
+    .skills-section {
+        padding: 30px 20px;
+    }
+
+    .skills-grid {
+        justify-content: center;
+    }
+
+    /* Projects page */
+    .projects-section {
+        padding: 30px 20px;
+    }
+
+    .projects-grid {
+        justify-content: center;
+    }
+
+    /* Contact page */
+    .contact-section {
+        padding: 30px 20px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
